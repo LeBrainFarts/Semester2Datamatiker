@@ -21,6 +21,10 @@ public class Movie {
         this.cast = cast;
     }
 
+    public Director getDirector() {
+        return director;
+    }
+
     @Override
     public String toString() {
         return "Movie{" +

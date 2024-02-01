@@ -9,7 +9,7 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         Storage storage = initStorage();
-        System.out.println(storage.toString());
+        System.out.println(storage.getDirectorForMovies("George Walton Lucas Jr.", storage.getMovies()));
     }
 
     private static Storage initStorage() {
@@ -43,13 +43,20 @@ public class Test {
         Movie indy = new Movie("Raiders of the Lost Ark", 1981, spielberg,
                 new Genre[]{Genre.ACTION, Genre.ADVENTURE}, 8.4,
                 new ArrayList<>(List.of(ford, allan)));
+
+        Movie indy2 = new Movie("Fuckers on Mars", 1987, spielberg,
+                new Genre[]{Genre.ACTION, Genre.ADVENTURE}, 8.4,
+                new ArrayList<>(List.of(ford, allan)));
+
         TVSerie friends = new TVSerie("Friends", 11,
                 new Genre[] { Genre.COMEDY, Genre.ROMANCE},
                 new ArrayList<>(List.of(aniston, cox, kudrow, leBlanc, perry, schwimmer)));
         storage.addMovie(starWars);
         storage.addMovie(indy);
         storage.addTVSerie(friends);
+        storage.addMovie(indy2);
         return storage;
+
     }
 
 }

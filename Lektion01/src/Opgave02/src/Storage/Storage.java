@@ -23,6 +23,28 @@ public class Storage {
         series.add(serie);
     }
 
+    public ArrayList<Movie> getDirectorForMovies(String InstruktørNavn, ArrayList<Movie> filmListe) {
+        ArrayList<Movie> instruktørFilm = new ArrayList<>();
+        for (Movie film : filmListe) {
+            if (film.getDirector().getName().equalsIgnoreCase(InstruktørNavn)) {
+                instruktørFilm.add(film);
+            }
+        }
+        return instruktørFilm;
+    }
+
+    public ArrayList<Movie> getMovies() {
+        return movies;
+    }
+
+    public ArrayList<TVSerie> getSeries() {
+        return series;
+    }
+
+    public ArrayList<Actor> getActors() {
+        return actors;
+    }
+
     @Override
     public String toString() {
         return

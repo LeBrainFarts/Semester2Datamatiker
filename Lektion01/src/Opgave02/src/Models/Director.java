@@ -2,20 +2,11 @@ package Models;
 
 import java.time.LocalDate;
 
-public class Director {
-    private String name;
-    private LocalDate birthday;
+public class Director extends Person {
 
     public Director(String name, LocalDate birthday) {
-        this.name = name;
-        this.birthday = birthday;
+        super(name, birthday);
     }
 
-    @Override
-    public String toString() {
-        return "Director{" +
-                "name='" + name + '\'' +
-                ", birthday=" + birthday +
-                '}';
-    }
+
 }

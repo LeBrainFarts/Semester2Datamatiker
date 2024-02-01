@@ -2,20 +2,11 @@ package Models;
 
 import java.time.LocalDate;
 
-public class Actor {
-    private String name;
-    private LocalDate birthday;
+public class Actor extends Person{
 
     public Actor(String name, LocalDate birthday) {
-        this.name = name;
-        this.birthday = birthday;
+        super(name, birthday);
     }
 
-    @Override
-    public String toString() {
-        return "Actor{" +
-                "name='" + name + '\'' +
-                ", birthday=" + birthday +
-                '}';
-    }
+
 }
