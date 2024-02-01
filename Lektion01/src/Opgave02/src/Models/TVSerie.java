@@ -1,6 +1,7 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class TVSerie {
     private String title;
@@ -13,5 +14,15 @@ public class TVSerie {
         this.numberOfSeasons = numberOfSeasons;
         this.genres = genres;
         this.cast = cast;
+    }
+
+    @Override
+    public String toString() {
+        return "TVSerie{" +
+                "title='" + title + '\'' +
+                ", numberOfSeasons=" + numberOfSeasons +
+                ", genres=" + Arrays.toString(genres) +
+                ", cast=" + cast +
+                '}';
     }
 }

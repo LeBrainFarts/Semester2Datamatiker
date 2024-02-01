@@ -10,4 +10,12 @@ public class Director {
         this.name = name;
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return "Director{" +
+                "name='" + name + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

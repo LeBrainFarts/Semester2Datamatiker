@@ -1,6 +1,7 @@
 import Models.*;
 import Storage.Storage;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +9,7 @@ import java.util.List;
 public class Test {
     public static void main(String[] args) {
         Storage storage = initStorage();
+        System.out.println(storage.toString());
     }
 
     private static Storage initStorage() {
@@ -49,4 +51,5 @@ public class Test {
         storage.addTVSerie(friends);
         return storage;
     }
+
 }

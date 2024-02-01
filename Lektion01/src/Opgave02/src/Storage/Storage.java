@@ -22,4 +22,13 @@ public class Storage {
     public void addTVSerie(TVSerie serie) {
         series.add(serie);
     }
+
+    @Override
+    public String toString() {
+        return
+                "movies=" + "\n" + movies +
+                ", series=" + "\n" + series +
+                ", actors=" + "\n" + actors +
+                '}';
+    }
 }

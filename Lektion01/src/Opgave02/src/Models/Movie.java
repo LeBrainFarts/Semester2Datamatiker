@@ -1,6 +1,7 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Movie {
     private String title;
@@ -18,5 +19,17 @@ public class Movie {
         this.genres = genres;
         this.rating = rating;
         this.cast = cast;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", productionYear=" + productionYear +
+                ", director=" + director +
+                ", genres=" + Arrays.toString(genres) +
+                ", rating=" + rating +
+                ", cast=" + cast +
+                '}';
     }
 }
