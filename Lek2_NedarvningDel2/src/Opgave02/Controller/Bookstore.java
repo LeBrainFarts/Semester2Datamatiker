@@ -7,12 +7,21 @@ public class Bookstore {
         Basket basket = new Basket();
         basket.addItem(new Book(600, "Introduction to Java Programming and Data Structures"));
         basket.addItem(new Book(350, "Head First Design Patterns"));
+        basket.addItem(new Book(400, "Head First Design Patterns"));
+        basket.addItem(new Book(450, "Head First Design Patterns"));
+        basket.addItem(new Book(500, "Design my head with Patterns"));
+        basket.addItem(new Book(550, "Head First Design Patterns"));
+       // basket.addItem(new Book(400, "Head First Design Patterns"));
+
+
         //-----------Fixed Discounts-----------//
 //        Discount fixedDiscount = new FixedDiscount("Fixed Discount", 50, 10);
 //        basket.addDiscount(fixedDiscount);
+
         //-----------Procent Discount-----------//
 //        Discount procentDiscount = new ProcentDiscount("Procent Discount", 25);
 //        basket.addDiscount(procentDiscount);
+
         //-----------Procent Discount-----------//
         Discount twoForOneDiscount = new TwoForOneDiscount("TwoForOne Discount");
         basket.addDiscount(twoForOneDiscount);

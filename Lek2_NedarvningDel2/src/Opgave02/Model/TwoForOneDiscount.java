@@ -13,14 +13,19 @@ public class TwoForOneDiscount extends Discount{
     @Override
     public double applyDiscount(Basket basket) {
         ArrayList<Book> books = basket.getItems();
-        Book billigsteBog = books.getFirst();
-        if (books.size() == 2) {
-            for (int i = 1; i < books.size(); i++) {
-                if (books.get(i).getPrice() < billigsteBog.getPrice()) {
-                    billigsteBog = books.get(i);
-                }
+        int numberOfPairs = books.size() / 2;
+
+        double totalDiscount = 0;
+
+            for (int i = 0; i < numberOfPairs * 2; i += 2) {
+                Book firstBook = books.get(i);
+                Book secondBook = books.get(i+1);
+
+                double billigsteBogPris1 = firstBook.getPrice();
+                double billigsteBogPris2 = secondBook.getPrice();
+
+                totalDiscount += Math.min(billigsteBogPris1, billigsteBogPris2);
             }
-        }
-        return -billigsteBog.getPrice();
+        return -totalDiscount;
     }
 }
