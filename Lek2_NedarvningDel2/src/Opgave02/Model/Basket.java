@@ -11,6 +11,9 @@ public class Basket {
         total += item.getPrice();
         items.add(item);
     }
+    public ArrayList<Book> getItems() {
+        return items;
+    }
 
     public void addDiscount(Discount discount) {
         discounts.add(discount);
