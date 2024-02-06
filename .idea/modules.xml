@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" filepath="$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" filepath="$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek2_NedarvningDel2/Lek3_Interfaces/Lek3_Interfaces.iml" filepath="$PROJECT_DIR$/Lek2_NedarvningDel2/Lek3_Interfaces/Lek3_Interfaces.iml" />
       <module fileurl="file://$PROJECT_DIR$/Semester2Datamatiker.iml" filepath="$PROJECT_DIR$/Semester2Datamatiker.iml" />
     </modules>
   </component>

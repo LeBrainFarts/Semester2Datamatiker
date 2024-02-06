@@ -1,6 +1,6 @@
 package Opgave01.Figurer;
 
-public class Ellipse extends Figurer{
+public class Ellipse extends Figurer implements Resizable{
     private int r1;
     private int r2;
     private double pi = 3.14;
@@ -15,5 +15,17 @@ public class Ellipse extends Figurer{
     @Override
     public double getAreal() {
         return pi*r1*r2;
+    }
+
+
+    //----------Lektion03 Opgave 1----------\\
+    @Override
+    public void doubleUp() {
+        double doubleUp = (pi*r1*r2) * 2;
+    }
+
+    @Override
+    public void halve() {
+        double halver = (pi*r1*r2) / 2;
     }
 }
