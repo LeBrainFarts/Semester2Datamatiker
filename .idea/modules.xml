@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lek06_RecutionFortsat/Lek06_RecutionFortsat.iml" filepath="$PROJECT_DIR$/Lek06_RecutionFortsat/Lek06_RecutionFortsat.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" filepath="$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" filepath="$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek3_Interfaces/Lek3_Interfaces.iml" filepath="$PROJECT_DIR$/Lek3_Interfaces/Lek3_Interfaces.iml" />
