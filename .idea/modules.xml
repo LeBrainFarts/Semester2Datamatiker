@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lek01_NedarvningDel1/Lek01_NedarvningDel1.iml" filepath="$PROJECT_DIR$/Lek01_NedarvningDel1/Lek01_NedarvningDel1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek02_NedarvningDel2/Lek02_NedarvningDel2.iml" filepath="$PROJECT_DIR$/Lek02_NedarvningDel2/Lek02_NedarvningDel2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek03_Interfaces/Lek03_Interfaces.iml" filepath="$PROJECT_DIR$/Lek03_Interfaces/Lek03_Interfaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek05_Rekursion/Lek05_Rekursion.iml" filepath="$PROJECT_DIR$/Lek05_Rekursion/Lek05_Rekursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lek06_RecutionFortsat/Lek06_RecutionFortsat.iml" filepath="$PROJECT_DIR$/Lek06_RecutionFortsat/Lek06_RecutionFortsat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" filepath="$PROJECT_DIR$/Lek1_NedarvningDel1/Lek1_NedarvningDel1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" filepath="$PROJECT_DIR$/Lek2_NedarvningDel2/Lek2_NedarvningDel2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lek3_Interfaces/Lek3_Interfaces.iml" filepath="$PROJECT_DIR$/Lek3_Interfaces/Lek3_Interfaces.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Lek5_Rekursion/Lek5_Rekursion.iml" filepath="$PROJECT_DIR$/Lek5_Rekursion/Lek5_Rekursion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lek07_Del_Loes_Kombiner/Lek07_Del_Loes_Kombiner.iml" filepath="$PROJECT_DIR$/Lek07_Del_Loes_Kombiner/Lek07_Del_Loes_Kombiner.iml" />
       <module fileurl="file://$PROJECT_DIR$/Semester2Datamatiker.iml" filepath="$PROJECT_DIR$/Semester2Datamatiker.iml" />
     </modules>
   </component>
