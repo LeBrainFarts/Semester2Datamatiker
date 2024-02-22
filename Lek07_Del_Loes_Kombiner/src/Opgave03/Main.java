@@ -8,6 +8,6 @@ public class Main {
     }
 
     public static int countLengthN(List<String> s, int n) {
-
+        return -1;
     }
 }
