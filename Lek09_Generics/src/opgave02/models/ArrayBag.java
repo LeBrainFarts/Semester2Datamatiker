@@ -37,42 +37,93 @@ public class ArrayBag<E> implements Bag<E> {
 
     @Override
     public boolean add(E newEntry) {
-        // TODO
-        return false;
+        //if newEntry is null, cant add anything
+        if (newEntry == null) {
+            return false;
+        }
+        //if newEntry is full, cant add anymore items
+        if (isFull()) {
+            return false;
+        }
+        //makes a new entry
+        items[size] = newEntry;
+        //resizes the array counter
+        size++;
+        //returns true so we know we've made a new entry in the array
+        return true;
     }
 
     @Override
     public E remove() {
-        // TODO
-        return null;
+        if (isEmpty()){
+            return null;
+        }
+        //Får den sidste item i arrayet
+        E removedItem = items[size-1];
+        //sætter den sidste item i arrayet til null
+        items[size-1] = null;
+        //resizer arraycount
+        size--;
+        //returner det fjernet item
+        return removedItem;
     }
 
     @Override
     public boolean remove(E anEntry) {
-        // TODO
+        if (anEntry == null) {
+           return false;
+        }
+        for (int i = 0; i < size; i++) {
+            if (items[i].equals(anEntry)) {
+                for (int j = 0; j < size; j++) {
+                    items[j] = items[j+1];
+                }
+                items[size-1] = null;
+                size--;
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
     public void clear() {
-        // TODO
+        for (int i = 0; i < size; i++) {
+            items[i] = null;
+        }
     }
 
     @Override
     public int getFrequencyOf(E anEntry) {
-        // TODO
-        return 0;
+        if (anEntry == null) {
+            return 0;
+        }
+        int count = 0;
+        if (items.equals(anEntry)) {
+            count++;
+        }
+            return count;
     }
 
     @Override
     public boolean contains(E anEntry) {
-        // TODO
+        if (anEntry == null) {
+            return false;
+        }
+        for (int i = 0; i < size; i++) {
+            if (items[i].equals(anEntry)) {
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
     public E[] toArray() {
-        // TODO
-        return null;
+        E[] toArray = (E[]) new Object[size];
+        for (int i = 0; i < size; i++) {
+            toArray[i] = items[i];
+        }
+        return toArray;
     }
 }
