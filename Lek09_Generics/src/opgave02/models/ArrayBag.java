@@ -27,12 +27,18 @@ public class ArrayBag<E> implements Bag<E> {
 
     @Override
     public boolean isFull() {
-        return size == items.length;
+        if (size == items.length) {
+            return true;
+        } else
+        return false;
     }
 
     @Override
     public boolean isEmpty() {
-        return size == 0;
+        if (size == 0) {
+            return true;
+        } else
+            return false;
     }
 
     @Override
